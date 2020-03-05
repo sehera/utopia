@@ -1,0 +1,111 @@
+
+
+@media (min-width: 600px) {
+
+  body{
+  background-color: #F1ECD7;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  }
+
+
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+       }
+  }
+
+
+h2{
+  font-family: "Akzidenz Grotesk", Sans-serif;
+  letter-spacing: 0.15em;
+  font-size:25px;
+  font-weight: normal;
+  position: absolute;
+  top:40%;
+  left:47%;
+  text-align: center;
+  border-style: dotted;
+  border-color: black;
+  border-radius: 50%;
+  padding:20px;
+}
+
+a{
+text-decoration: none;
+}
+
+h3{
+  font-family: "Akzidenz Grotesk", Sans-serif;
+  letter-spacing: 0.15em;
+  font-size:15px;
+  font-weight: normal;
+  position: absolute;
+  top:90%;
+  text-align: left;
+  padding:20px;
+  margin:2px;
+  font-style: italic;
+}
+
+}
+
+@media (max-width: 600px) {
+
+  body{
+  background-color: #F1ECD7;
+;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  }
+
+
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+       }
+  }
+
+
+
+h2{
+  font-family: "Akzidenz Grotesk", Sans-serif;
+  letter-spacing: 0.15em;
+  font-size:20px;
+  font-weight: normal;
+  position: absolute;
+  top:40%;
+  left:40%;
+  text-align: center;
+  border-style: dotted;
+  border-color: black;
+  border-radius: 50%;
+  padding:20px;
+}
+
+a{
+text-decoration: none;
+}
+
+h3{
+  font-family: "Akzidenz Grotesk", Sans-serif;
+  letter-spacing: 0.15em;
+  font-size:15px;
+  font-weight: normal;
+  position: absolute;
+  top:90%;
+  text-align: left;
+  padding:20px;
+  margin:2px;
+  font-style: italic;
+}
+
+}

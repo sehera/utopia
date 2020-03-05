@@ -1,0 +1,193 @@
+::-webkit-scrollbar {
+  width: 50px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+@media (min-width: 600px) {
+
+  body {
+    overflow: hidden;
+    background-color: #F1ECD7;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+       }
+  }
+
+
+  .horizontal-scroll {
+    width:100vh;
+    height: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 4% 5% 2% 3%;
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+    -webkit-transform: rotate(-90deg) translate3d(0, -100vh, 0);
+            transform: rotate(-90deg) translate3d(0, -100vh, 0);
+  }
+  .horizontal-scroll > * {
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+    -webkit-transform: rotate(90deg) translate3d(0, calc(-100vh + 70px), 0);
+            transform: rotate(90deg) translate3d(0, calc(-100vh + 70px), 0);
+  }
+  .horizontal-scroll__block {
+    width: calc(100vh - 150px);
+    height: calc(100vh - 100px);
+    position: relative;
+  }
+
+  .horizontal-scroll__block:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .horizontal-scroll__block .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat center center / cover;
+    opacity: 95%;
+    background-blend-mode: luminosity;
+  }
+
+    .horizontal-scroll__block .background:hover{
+      filter: blur(2px);
+      transform: scale(1.2);
+      transition: transform 2s .2s ease-in-out;
+    }
+
+
+  .horizontal-scroll__block .letter {
+    display: inline-block;
+    position: absolute;
+    top: 105%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+    font-weight: normal;
+    font-size: 1em;
+    letter-spacing: 0.04em;
+    font-family: 'Akzidenz-Grotesk', sans-serif;
+    color: black;
+  }
+
+  a{
+  color:black;
+  text-decoration: none;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+
+  body {
+    overflow: hidden;
+    background-color: black;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+       }
+  }
+
+
+  .horizontal-scroll {
+    width: 100vh;
+    height: 80vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 5% 5% 2% 3%;
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+    -webkit-transform: rotate(-90deg) translate3d(0, -100vh, 0);
+            transform: rotate(-90deg) translate3d(0, -100vh, 0);
+  }
+  .horizontal-scroll > * {
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+    -webkit-transform: rotate(90deg) translate3d(0, calc(-100vh + 70px), 0);
+            transform: rotate(90deg) translate3d(0, calc(-100vh + 70px), 0);
+  }
+  .horizontal-scroll__block {
+    width: calc(100vh - 150px);
+    height: calc(100vh - 100px);
+    position: relative;
+  }
+
+  .horizontal-scroll__block:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  .horizontal-scroll__block .background {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    bottom: 0;
+    left: 0;
+    background: no-repeat center center / cover;
+    opacity: 95%;
+    background-blend-mode: luminosity;
+  }
+
+    .horizontal-scroll__block .background:hover{
+      filter: blur(2px);
+      transform: scale(1.08);
+      transition: transform 2s .2s ease-in-out;
+    }
+
+
+  .horizontal-scroll__block .letter {
+    display: inline-block;
+    position: absolute;
+    top: 104%;
+    right: auto;
+    bottom: auto;
+    left: 40%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+    font-weight: normal;
+    font-size: 0.7em;
+    letter-spacing: 0.04em;
+    font-family: 'Akzidenz-Grotesk', sans-serif;
+    color: #F1EEE3
+  }
+
+  a{
+  color:#F1EEE3;
+  text-decoration: none;
+  }
+
+}

@@ -1,0 +1,269 @@
+body{
+background-color: #F1ECD7;
+animation: fadeInAnimation ease 5s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@media (min-width: 600px) {
+
+div {
+  animation: rotate-all 7s 0  linear alternate;
+}
+
+.div1 {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  position: relative;
+  margin: auto;
+  animation: square-to-circle 5s .5s  cubic-bezier(1,.015,.295,1.225) alternate-reverse;
+}
+
+.div2 {
+    width: 80px;
+  height: 80px;
+  background-color: black;
+  position: relative;
+  margin: auto;
+  animation: square-to-circle2 5s .42s  cubic-bezier(1,.015,.295,1.225) alternate-reverse;
+}
+
+#one {
+  top: 150px;
+}
+
+#two {
+  top: 150px;
+  right: 80px;
+}
+
+#three {
+  top: 150px;
+}
+
+#four {
+  bottom: 10px;
+  left: 80px;
+}
+
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:;
+    transform:rotate(45deg);
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+    background:black;
+    transform:rotate(135deg);
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:black;
+    transform:rotate(180deg);
+  }
+  75%  {
+    border-radius:50% 50% 50% 0;
+    background:black;
+    transform:rotate(315deg);
+  }
+  100% {
+    border-radius:50%;
+    background:#E8E2CA;
+    transform:rotate(404deg);
+  }
+}
+
+@keyframes square-to-circle2 {
+  0%  {
+    border-radius:0 0 0 0;
+    background:;
+    transform:rotate(45deg);
+  }
+  25%  {
+    border-radius:0 0 50% 0;
+    background:black;
+    transform:rotate(135deg);
+  }
+  50%  {
+    border-radius:0 0 50% 50%;
+    background:black;
+    transform:rotate(180deg);
+  }
+  75%  {
+    border-radius:50% 0 50% 50%;
+    background:black;
+    transform:rotate(315deg);
+  }
+  100% {
+    border-radius:50%;
+    background:#E8E2CA;
+    transform:rotate(404deg);
+  }
+}
+
+
+h4{
+  width: 190px;
+  height: 50px;
+  background-color: transparent;
+  border: 5px;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top:70%;
+  left: 47%;
+  font-family: "Akzidenz Grotesk", Sans-serif;
+  font-weight:lighter;
+  animation: fadeInAnimation 20s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index:2;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 50;
+     }
+}
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+div {
+  animation: rotate-all 7s 0  linear alternate;
+}
+
+.div1 {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  position: relative;
+  margin: auto;
+  animation: square-to-circle 5s .5s  cubic-bezier(1,.015,.295,1.225) alternate-reverse;
+}
+
+.div2 {
+    width: 80px;
+  height: 80px;
+  background-color: black;
+  position: relative;
+  margin: auto;
+  animation: square-to-circle2 5s .42s  cubic-bezier(1,.015,.295,1.225) alternate-reverse;
+}
+
+#one {
+  top: 150px;
+}
+
+#two {
+  top: 150px;
+  right: 80px;
+}
+
+#three {
+  top: 150px;
+}
+
+#four {
+  bottom: 10px;
+  left: 80px;
+}
+
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:;
+    transform:rotate(45deg);
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+    background:black;
+    transform:rotate(135deg);
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:black;
+    transform:rotate(180deg);
+  }
+  75%  {
+    border-radius:50% 50% 50% 0;
+    background:black;
+    transform:rotate(315deg);
+  }
+  100% {
+    border-radius:50%;
+    background:#E8E2CA;
+    transform:rotate(404deg);
+  }
+}
+
+@keyframes square-to-circle2 {
+  0%  {
+    border-radius:0 0 0 0;
+    background:;
+    transform:rotate(45deg);
+  }
+  25%  {
+    border-radius:0 0 50% 0;
+    background:black;
+    transform:rotate(135deg);
+  }
+  50%  {
+    border-radius:0 0 50% 50%;
+    background:black;
+    transform:rotate(180deg);
+  }
+  75%  {
+    border-radius:50% 0 50% 50%;
+    background:black;
+    transform:rotate(315deg);
+  }
+  100% {
+    border-radius:50%;
+    background:#E8E2CA;
+    transform:rotate(404deg);
+  }
+}
+
+
+h4{
+  width: 190px;
+  height: 50px;
+  background-color: transparent;
+  border: 5px;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top:70%;
+  left: 40%;
+  font-family: "Akzidenz Grotesk", Sans-serif;
+  font-weight:lighter;
+  animation: fadeInAnimation 20s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 50;
+     }
+}
+}
